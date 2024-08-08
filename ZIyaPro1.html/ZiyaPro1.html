@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+    
+    <div class="flex min-h-[100vh] flex-nowrap">
+        <div class="w-64 bg-gray-800 hidden md:block"> <!--first we have given display:hidden. It is according to the mobile. And then we have given that md that is 768px screen then it will be shown as block. We  have made the mobile responsive screen for now.-->
+
+            <div class="flex items-center justify-center h-20 bg-gray-900">
+                <h1 class="text-white text-3xl font-semibold">DASHBOARD</h1>
+            </div>
+
+            <nav class="mt-10 ">
+                <a href="" class="flex items-center mt-4 bg-gray-500 p-3 hover:text-gray-400">
+                    <span class="mx-3">Home</span>
+                </a>
+
+                <a href="" class="flex items-center mt-4 hover:bg-gray-500 p-3  hover:text-gray-400 ">
+                    <span class="mx-3">Analytics</span>
+                </a>
+
+                <a href="" class="flex items-center mt-4 hover:bg-gray-500 p-3  hover:text-gray-400">
+                    <span class="mx-3">Sales</span>
+                </a>
+
+                <a href="" class="flex items-center mt-4 hover:bg-gray-500 p-3 hover:text-gray-400 ">
+                    <span class="mx-3">Messages</span>
+                </a>
+            </nav>
+
+
+        </div> 
+
+        <!--Main content-->
+        <div class="flex flex-col w-full">
+            <!--Navbar-->
+            <header class="flex items-center p-1 bg-white ">
+                <button class="md:hidden  border rounded-md text-gray-600 border-gray-300 hover:border-none">
+                    <svg class="p-3" viewBox="0 0 100 80" width="60" height="60">
+                        <rect width="100" height="20" rx="10"></rect>
+                        <rect y="30" width="100" height="20" rx="10"></rect>
+                        <rect y="60" width="100" height="20" rx="10"></rect>
+                      </svg>
+                </button>
+
+                <div class="ml-auto flex items-center ">
+                    <button class="flex items-center px-4 py-2 border mr-2 text-gray-600 border-gray-300 rounded-md hover:border-none">
+                        <span class="">
+                                Sign Out
+                        </span>
+                    </button>
+                </div>
+            </header>
+
+           <!--Content-->  
+
+            <main class="">
+                <div class="flex p-5 md:p-6 gap-5 flex-wrap">
+                    <!--Card-->
+                    <div class="bg-white p-5 md:p-6 rounded-lg shadow-lg min-w-[40%] transition-shadow duration-900 ease-in-out hover:shadow-none">
+                        <!--Here md means the size of the screen. That is on normal screen padding is 5 and on md the padding is of 6.-->
+                        <h3 class="text-xl font-semibold">Revenue</h3>
+                        <p class="text-gray-700 text-3xl">$12,000</p>
+                    </div>
+
+                    <div class="bg-white p-5 md:p-6 rounded-lg shadow-lg  min-w-[40%]  transition-shadow duration-900 ease-in-out hover:shadow-none">
+                        <h3 class="text-xl font-semibold">Sales</h3>
+                        <p class="text-gray-700 text-3xl">5600</p>
+                    </div>
+
+                    <div class="bg-white p-5 md:p-6 rounded-lg shadow-lg min-w-[40%]  transition-shadow duration-900 ease-in-out hover:shadow-none">
+                        <h3 class="text-xl font-semibold">Users</h3>
+                        <p class="text-gray-700 text-3xl">6000</p>
+                    </div>
+                </div>
+
+                <div class="mt-7 ml-6">
+                    <div class="flex items-center justify-between">
+                        <h2 class="text-xl font-bold text-gray-800 mb-2">Recent Activities</h2>
+                        <button class="mr-3 p-6 py-2 px-4 bg-blue-500 rounded-md hover:bg-blue-600">View All</button>
+                    </div>
+
+                    <div class="bg-white p-4 md:p-6 shadow-lg rounded-lg overflow-x-auto mt-4 mr-3">
+
+                        <table class="w-full">
+                            <thead>
+                                <tr class="text-left border-b">
+                                    <th class="py-2">Date</th>
+                                    <th class="py-2">Activity</th>
+                                    <th class="py-2">Status</th>
+                                    
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr class="border-b"> <!--Border-b is border bottom.-->
+                                    <td class="py-2">06/01/2024</td>
+                                    <td class="py-2">Logged In</td>
+                                    <td class="py-2 text-green-600">Completed</td>
+                                </tr>
+
+                                <tr class="border-b"> <!--Border-b is border bottom.-->
+                                    <td class="py-2">06/01/2024</td>
+                                    <td class="py-2">Logged In</td>
+                                    <td class="py-2 text-green-600">Completed</td>
+                                </tr>
+
+                                <tr class="border-b"> <!--Border-b is border bottom.-->
+                                    <td class="py-2">06/01/2024</td>
+                                    <td class="py-2">Logged In</td>
+                                    <td class="py-2 text-green-600">Completed</td>
+                                </tr>
+
+                                <tr class="border-b"> <!--Border-b is border bottom.-->
+                                    <td class="py-2">06/01/2024</td>
+                                    <td class="py-2">Logged In</td>
+                                    <td class="py-2 text-green-600">Completed</td>
+                                </tr>
+
+                                <tr class="border-b"> <!--Border-b is border bottom.-->
+                                    <td class="py-2">06/01/2024</td>
+                                    <td class="py-2">Logged In</td>
+                                    <td class="py-2 text-green-600">Completed</td>
+                                </tr>
+
+                                <tr class="border-b"> <!--Border-b is border bottom.-->
+                                    <td class="py-2">06/01/2024</td>
+                                    <td class="py-2">Logged In</td>
+                                    <td class="py-2 text-green-600">Completed</td>
+                                </tr>
+                            </tbody>
+
+
+                        </table>
+
+                    </div>
+
+                    <div class="bg-white p-4 md:p-6 rounded-lg shadow-lg h-64 mt-7">
+                        <h3 class="text-xl font-semibold  mb-4">Activity Feed</h3>
+
+                        <div class="overflow-y-scroll h-[80%]">
+                            <div class="flex items-center mb-4">
+                                <div class="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center text-white">JD</div>
+
+                                <div class="ml-4">
+
+                                    <p class="font-semibold">John Dower</p>
+                                    <p class="text-gray-500">Logged In</p>
+                                </div>
+
+                                
+                                
+                            </div>
+
+                            <div class="flex items-center mb-4">
+                                <div class="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center text-white">JD</div>
+
+                                <div class="ml-4">
+
+                                    <p class="font-semibold">John Dower</p>
+                                    <p class="text-gray-500">Logged In</p>
+                                </div>
+
+                                
+                                
+                            </div>
+
+                            <div class="flex items-center mb-4">
+                                <div class="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center text-white">JD</div>
+
+                                <div class="ml-4">
+
+                                    <p class="font-semibold">John Dower</p>
+                                    <p class="text-gray-500">Logged In</p>
+                                </div>
+
+                                
+                                
+                            </div>
+
+                            <div class="flex items-center mb-4">
+                                <div class="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center text-white">JD</div>
+
+                                <div class="ml-4">
+
+                                    <p class="font-semibold">John Dower</p>
+                                    <p class="text-gray-500">Logged In</p>
+                                </div>
+
+                                
+                                
+                            </div>
+
+                            <div class="flex items-center mb-4">
+                                <div class="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center text-white">JD</div>
+
+                                <div class="ml-4">
+
+                                    <p class="font-semibold">John Dower</p>
+                                    <p class="text-gray-500">Logged In</p>
+                                </div>
+
+                                
+                                
+                            </div>
+
+                            <div class="flex items-center mb-4">
+                                <div class="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center text-white">JD</div>
+
+                                <div class="ml-4">
+
+                                    <p class="font-semibold">John Dower</p>
+                                    <p class="text-gray-500">Logged In</p>
+                                </div>
+
+                                
+                                
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </main>
+
+
+
+
+        </div>
+    </div>
+
+
+</body>
+</html>
